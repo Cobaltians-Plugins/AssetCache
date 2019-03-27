@@ -89,7 +89,7 @@ As for download, path is relative to web assets folder defined in Cobalt.
 
 Native side is sending callback to keep web updated of the deletion. Here are the possibilities :
 
-**Success (file deleted) **
+**Success (file deleted)**
 
 `{ path : 'yourDestinationFilePath', status: 'success' }`
 
