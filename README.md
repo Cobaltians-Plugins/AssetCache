@@ -10,7 +10,9 @@ Then, you will be able to access it from web source or delete it aswell.
 * Add the cobalt.imagecache.js to your web JS folder
 * Add an html link to the cobalt.imagecache.js plugin script after the cobalt link in the HEAD tag
 
-### download
+## download
+
+Downloads a distant file and store it locally in the web folder.
 
 Use the `cobalt.imageCache.download` shortcut like this
 
@@ -31,7 +33,7 @@ Notes :
 - Path is relative to app web folder defined in cobalt. (assets or assets/www for example on Android).
 - Path is also used as an id for status events or delete method.
 
-#### callback
+### callback
 
 Native side is sending download progress events using the web callback. Here is the data that can be sent in this callback :
 
@@ -66,6 +68,8 @@ All other errors
 `{ path : 'yourDestinationFilePath', status: 'error', cause : 'unknownError' }`
 
 ## delete
+
+Deletes a local file.
 
 Use the `cobalt.imageCache.delete` shortcut like this
 
