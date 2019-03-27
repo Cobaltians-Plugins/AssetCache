@@ -91,7 +91,10 @@ Native side is sending callback to keep web updated of the deletion. Here are th
 
 **Success (file deleted)**
 
-`{ path : 'yourDestinationFilePath', status: 'success' }`
+`{ path : 'yourDestinationFilePath', status: 'success', root: 'file://.../' }`
+
+* `root` is the local file folder path. You should concatene root+path to access the file in the webview.
+
 
 **Errors**
 
