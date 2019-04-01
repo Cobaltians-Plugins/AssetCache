@@ -1,22 +1,22 @@
-# ImageCache Plugin
+# AssetCache Plugin
 
-ImageCache plugin allows you to download a file from the world wide web and download it to the local web folder of your app. 
+AssetCache plugin allows you to download a file from the world wide web and download it to the local web folder of your app. 
 
 Then, you will be able to access it from web source or delete it aswell.
 
 ## How to use
 
 * import the plugin to your project as explained [here](https://github.com/cobaltians/cobalt/wiki/Plugins-usage)
-* Add the cobalt.imagecache.js to your web JS folder
-* Add an html link to the cobalt.imagecache.js plugin script after the cobalt link in the HEAD tag
+* Add the cobalt.assetcache.js to your web JS folder
+* Add an html link to the cobalt.assetcache.js plugin script after the cobalt link in the HEAD tag
 
 ## download
 
 Downloads a distant file and store it locally in the web folder.
 
-Use the `cobalt.imageCache.download` shortcut like this
+Use the `cobalt.assetCache.download` shortcut like this
 
-    cobalt.imageCache.download({ 
+    cobalt.assetCache.download({ 
         path: 'download/subfolder/image.png', 
         url : 'https://kristal.io/img/logo-kristal-fr.9bab385.png'}, 
         function(data){
@@ -25,8 +25,8 @@ Use the `cobalt.imageCache.download` shortcut like this
 
 Here is the detail of `data` sent by the web : 
 
-* `path` : (string) le chemin local de destination du fichier (subfolder/image.png)
-* `url` : (string) L'url distante du fichier à télécharger
+* `path` : (string) The destination local path of the file (subfolder/file.png)
+* `url` : (string) The url of the file on the internet
 
 
 Notes : 
@@ -73,9 +73,9 @@ All other errors
 
 Deletes a local file.
 
-Use the `cobalt.imageCache.delete` shortcut like this
+Use the `cobalt.assetCache.delete` shortcut like this
 
-    cobalt.imageCache.delete({ 
+    cobalt.assetCache.delete({ 
         path: 'download/subfolder/image.png', 
         function(data){
           cobalt.log('status', data.status, data);
