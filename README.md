@@ -7,7 +7,7 @@ Then, you will be able to access it from web source or delete it aswell.
 ## How to use
 
 * import the plugin to your project as explained [here](https://github.com/cobaltians/cobalt/wiki/Plugins-usage)
-* Add the cobalt.assetcache.js to your web JS folder
+* Add the cobalt.asset-cache.js to your web JS folder
 * Add an html link to the cobalt.assetcache.js plugin script after the cobalt link in the HEAD tag
 
 ## download
