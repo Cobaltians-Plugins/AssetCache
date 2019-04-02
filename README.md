@@ -68,7 +68,7 @@ All other errors
 
 Deletes a local file that was previously downloaded
 
-Use the `cobalt.assetCache.delete` shortcut like this
+Use the `cobalt.assetCache.delete` method like this
 
     cobalt.assetCache.delete({ 
         url: 'https://server.com/path/file.ext'
