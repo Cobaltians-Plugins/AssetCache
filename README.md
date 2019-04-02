@@ -66,7 +66,7 @@ All other errors
 
 ## delete
 
-Deletes a local file.
+Deletes a local file that was previously downloaded
 
 Use the `cobalt.assetCache.delete` shortcut like this
 
