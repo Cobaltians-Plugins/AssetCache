@@ -17,10 +17,10 @@ Downloads a distant file and store it locally in the web folder.
 Use the `cobalt.assetCache.download` method like this
 
     cobalt.assetCache.download({
-            url : 'https://server.com/path/file.ext'
-        },
-        function(data){
-          cobalt.log('status', data.status, data);
+        url : 'https://server.com/path/file.ext'
+      },
+      function(data){
+        cobalt.log('status', data.status, data);
     });
 
 Parameters :
@@ -71,12 +71,12 @@ Deletes a local file.
 Use the `cobalt.assetCache.delete` shortcut like this
 
     cobalt.assetCache.delete({ 
-            url: 'https://server.com/path/file.ext'
-            //or
-            path: 'file:///.../previously_received_random_file_name'
-        }
-        function(data){
-          cobalt.log('status', data.status, data);
+        url: 'https://server.com/path/file.ext'
+        //or
+        path: 'file:///.../previously_received_random_file_name'
+      },
+      function(data){
+        cobalt.log('status', data.status, data);
     });
 
 Here, in the first parameter, web can send `path` or `url`.
