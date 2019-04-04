@@ -48,6 +48,10 @@ File has been successfully downloaded and is available at the given `path` for w
 
 **Errors**
 
+Read/Write permission denied by user :
+
+`{ status: 'error', cause : 'permissionDenied' }`
+
 Network errors :
 
 `{ status: 'error', cause : 'networkError' }`
@@ -95,6 +99,10 @@ Native side is sending callback to keep web updated of the deletion. Here are th
 `{ status: 'success' }`
 
 **Errors**
+
+Read/Write permission denied by user :
+
+`{ status: 'error', cause : 'permissionDenied' }`
 
 File not found
 
