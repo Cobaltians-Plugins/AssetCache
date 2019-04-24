@@ -42,7 +42,7 @@ File is downloading. Download progress is at 42%.
 
 **Download success and file available**
 
-`{ status: 'success', path: 'file://.../a_random_file_name' }`
+`{ status: 'success', path: '/.../a_random_file_name' }`
 
 File has been successfully downloaded and is available at the given `path` for web use.
 
@@ -77,7 +77,7 @@ Use the `cobalt.assetCache.delete` method like this
     cobalt.assetCache.delete({ 
         url: 'https://server.com/path/file.ext'
         //or
-        path: 'file:///.../previously_received_random_file_name'
+        path: '/.../previously_received_random_file_name'
       },
       function(data){
         cobalt.log('status', data.status, data);
